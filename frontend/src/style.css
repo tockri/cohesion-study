@@ -1,0 +1,27 @@
+body {
+  max-width: 480px;
+  margin: 2rem auto;
+  font-family: system-ui, sans-serif;
+  padding: 0 1rem;
+}
+
+#todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#todo-title {
+  flex: 1;
+  padding: 0.4rem;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}

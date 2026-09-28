@@ -1,0 +1,18 @@
+# デフォルトの無視対象ファイル
+/shelf/
+/workspace.xml
+# エディターベースの HTTP クライアントリクエスト
+/httpRequests/
+# 無視対象のデフォルトフォルダー (クエリファイルを含む)
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+/modules.xml
+/modules/
+/libraries
+/google-java-format.xml
+/compiler.xml
+/.name
+/misc.xml

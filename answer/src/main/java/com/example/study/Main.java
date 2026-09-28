@@ -32,6 +32,12 @@ public class Main {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
         server.createContext("/", exchange -> {
+            if (!exchange.getRequestURI().getPath().equals("/")) {
+                exchange.sendResponseHeaders(404, -1);
+                exchange.close();
+                return;
+            }
+
             String help = "GET  /todos  Todoの一覧を取得する\nPOST /todos  Todoを追加する\n";
             byte[] body = help.getBytes(StandardCharsets.UTF_8);
             exchange.getResponseHeaders().add("Content-Type", "text/plain; charset=utf-8");
@@ -43,6 +49,12 @@ public class Main {
         });
 
         server.createContext("/todos", exchange -> {
+            if (!exchange.getRequestURI().getPath().equals("/todos")) {
+                exchange.sendResponseHeaders(404, -1);
+                exchange.close();
+                return;
+            }
+
             String method = exchange.getRequestMethod();
 
             if (method.equals("GET")) {

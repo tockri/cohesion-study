@@ -4,13 +4,20 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/min-cohesion" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/answer" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/min-cohesion" />
+            <option value="$PROJECT_DIR$/answer" />
           </set>
         </option>
-        <option name="myGradleHome" value="" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/workshop" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/workshop" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
